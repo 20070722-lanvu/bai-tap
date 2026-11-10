@@ -1,0 +1,123 @@
+
+/* CSS WEEK 1 - HOMEWORK 1 */
+
+/* 1. Chỉnh sửa nội dung trang web */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f5f7f2;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Chỉnh màu nền tiêu đề */
+header {
+    background-color: #285943;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* 3. Chỉnh màu nền thanh điều hướng */
+nav {
+    background-color: #173d2d;
+    padding: 12px;
+}
+
+/* 4. Chỉnh màu nền và kích thước chữ phần chính */
+main {
+    background-color: #ffffff;
+    font-size: 18px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+}
+
+/* 5. Chỉnh màu nền chân trang */
+footer {
+    background-color: #173d2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 6. Chỉnh cách hiển thị và chiều rộng danh sách */
+li {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+}
+
+/* 7. Chỉnh tiêu đề h1 */
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: white;
+    font-size: 34px;
+}
+
+/* 8. Chỉnh chiều cao dòng của đoạn văn */
+p {
+    line-height: 1.8;
+}
+
+/* 9. Chỉnh thanh điều hướng */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #173d2d;
+}
+
+/* 10. Chỉnh hình ảnh */
+header img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+main div img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #e0eadf;
+}
+
+/* Hiển thị trên điện thoại */
+@media screen and (max-width: 600px) {
+    li {
+        display: block;
+        width: 100%;
+    }
+
+    main {
+        width: 88%;
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
